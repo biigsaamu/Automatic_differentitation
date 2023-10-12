@@ -1,0 +1,70 @@
+@startuml
+'https://plantuml.com/class-diagram
+skinparam classAttributeIconSize 0
+
+interface ArithmeticExpression{
++ {abstract} calculate() : double
+}
+
+class Expression implements ArithmeticExpression{
+- expression : ArithmeticExpression
++ calculate() : double
+}
+Expression o--> "*" ArithmeticExpression : ArithmeticExpressions
+
+abstract class BinaryOperator implements ArithmeticExpression{
+# op1 : ArithmeticExpression
+# op2 : ArithmeticExpression
++ BinaryOperator(ArithmeticExpression expr1, ArithmeticExpression expr2)
++{abstract} calculate() : double
+}
+
+class Suma extends BinaryOperator{
++ Suma (ArithmeticExpression expr1, ArithmeticExpression expr2)
++ calculate() : double
+}
+
+class Resta extends BinaryOperator{
++ Resta (ArithmeticExpression expr1, ArithmeticExpression expr2)
++ calculate() : double
+}
+
+class Mult extends BinaryOperator{
++ Mult (ArithmeticExpression expr1, ArithmeticExpression expr2)
++ calculate() : double
+}
+
+class Div extends BinaryOperator{
++ Div (ArithmeticExpression expr1, ArithmeticExpression expr2)
++ calculate() : double
+}
+
+class X implements ArithmeticExpression{
+- expression : ArithmeticExpression
++ calculate() : double
+}
+
+class Constant implements ArithmeticExpression{
+- value : double
++ calculate() : double
+}
+
+class Sin implements ArithmeticExpression{
+- expression : ArithmeticExpression
++ calculate() : double
+}
+
+class Cos implements ArithmeticExpression{
+- expression : ArithmeticExpression
++ calculate() : double
+}
+
+abstract class Pow implements ArithmeticExpression{
+- base : ArithmeticExpression
+- exponent : ArithmeticExpression
++ calculate() : double
+}
+
+
+
+@enduml
