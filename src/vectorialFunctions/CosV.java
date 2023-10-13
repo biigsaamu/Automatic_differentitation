@@ -9,14 +9,17 @@ public class CosV implements Function{
   }
 
   @Override
-  public double calculate() {
-    double value = expression.calculate();
-    double sin = Math.sin(value);
-    System.out.println("sin(" + value + ") is " + sin);
-    return sin;
+  public DualNumber calculate(DualNumber dn) {
+    DualNumber value = expression.calculate(dn);
+    //f(x)
+    double cos = Math.cos(value.u);
+    System.out.println("cos(" + value + ") is " + cos);
+    //f'(x)
+    double derivativeCos = Math.sin(value.u) * (value.uprime * -1);
+    return new DualNumber(cos, derivativeCos);
   }
 
   public String toString() {
-    return "sin(" + expression + ")";
+    return "cos(" + expression + ")";
   }
 }

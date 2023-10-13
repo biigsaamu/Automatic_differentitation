@@ -5,10 +5,14 @@ public class Square extends BinaryOperatorV{
     super(op1, op2);
   }
   @Override
-  public double calculate(){
-    double result = Math.pow(op1.calculate(), op2.calculate());
-    System.out.println("Pow " + op1 + "^" + op2 + " = " + result);
-    return result;
+  public DualNumber calculate(DualNumber dn){ // idk if we should keep this class
+    DualNumber dn1 = op1.calculate(dn);
+    DualNumber dn2 = op2.calculate(dn);
+    // f(x)
+    double pow = Math.pow(dn1.u, dn2.u);
+    // f'(x)
+    double derivativePow = dn2.u * Math.pow(dn1.u, (dn2.u-1)) * dn1.uprime;
+    return new DualNumber(pow, derivativePow);
   }
   public String toString() {
     return "Pow " + op1 + "^" + op2;

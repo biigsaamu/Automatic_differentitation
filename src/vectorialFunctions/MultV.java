@@ -1,6 +1,5 @@
 package vectorialFunctions;
 
-import scalarFunctions.ArithmeticExpression;
 
 public class MultV extends BinaryOperatorV{
   public MultV(Function op1, Function op2) {
@@ -8,11 +7,15 @@ public class MultV extends BinaryOperatorV{
   }
 
   @Override
-  public double calculate() {
-    double result;
-    result = op1.calculate() * op2.calculate();
-    System.out.println("Mult: " + op1 + " * " + op2 + " = " + result);
-    return result;
+  public DualNumber calculate(DualNumber dn) {
+    DualNumber dn1 = op1.calculate(dn);
+    DualNumber dn2 = op2.calculate(dn);
+    // f(x)
+    double multiplication = dn1.u * dn2.u;
+    // f'(x)
+    double derivativeMultiplication = (dn1.uprime * dn2.u) + (dn1.u * dn2.uprime);
+    //System.out.println("Mult: " + op1 + " * " + op2 + " = " + result);
+    return new DualNumber(multiplication, derivativeMultiplication);
   }
   public String toString() {
     return "(" + op1 + " * " + op2 + ")";

@@ -9,11 +9,14 @@ public class SinV implements Function{
   }
 
   @Override
-  public double calculate() {
-    double value = expression.calculate();
-    double sin = Math.sin(value);
+  public DualNumber calculate(DualNumber dn) {
+    DualNumber value = expression.calculate(dn);
+    //f(x)
+    double sin = Math.sin(value.u);
     System.out.println("sin(" + value + ") is " + sin);
-    return sin;
+    //f'(x)
+    double derivativeSin = Math.cos(value.u) * (value.uprime);
+    return new DualNumber(sin, derivativeSin);
   }
 
   public String toString() {

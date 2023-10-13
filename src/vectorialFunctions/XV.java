@@ -1,19 +1,15 @@
 package vectorialFunctions;
 
-
-import scalarFunctions.ArithmeticExpression;
-
 public class XV implements Function{
   private Function expression;
-  public XV(Function expression) {
+  public XV(Function expression) { // i think this should be empty - slide 17
     this.expression = expression;
   }
 
   @Override
-  public double calculate() {
-    double result = expression.calculate();
-    System.out.println(expression + " " + result);
-    return result;
+  public DualNumber calculate(DualNumber dn) {
+    //System.out.println(expression + " " + result);
+    return new DualNumber(dn.u, 1.0);
   }
 
   public String toString() {

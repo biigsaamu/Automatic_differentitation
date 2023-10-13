@@ -1,6 +1,6 @@
 package vectorialFunctions;
 
 public interface Function {
-  public abstract double calculate();
+  public abstract DualNumber calculate(DualNumber dn);
 }
 

@@ -7,9 +7,9 @@ public class ConstantV implements Function{
     this.value = value;
   }
 
-  public double calculate(){
+  public DualNumber calculate(DualNumber dn){
     System.out.println("Constant = " + this.value);
-    return this.value;
+    return new DualNumber(this.value, 1.0);
   }
 
   @Override

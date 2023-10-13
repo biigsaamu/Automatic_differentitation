@@ -5,20 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="411324b7-d572-4a0b-95c8-30cbfe870679" name="Changes" comment="scalarFunction done">
-      <change afterPath="$PROJECT_DIR$/src/vectorialFunctions/BinaryOperatorV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vectorialFunctions/ConstantV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vectorialFunctions/CosV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vectorialFunctions/DivV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vectorialFunctions/DualNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vectorialFunctions/Function.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vectorialFunctions/MultV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vectorialFunctions/Power.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vectorialFunctions/RestaV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vectorialFunctions/SinV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vectorialFunctions/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vectorialFunctions/SumaV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vectorialFunctions/XV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vectorialFunctions/Exponential.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vectorialFunctions/Logarithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vectorialFunctions/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vectorialFunctions/BinaryOperatorV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vectorialFunctions/BinaryOperatorV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vectorialFunctions/ConstantV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vectorialFunctions/ConstantV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vectorialFunctions/CosV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vectorialFunctions/CosV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vectorialFunctions/DivV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vectorialFunctions/DivV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vectorialFunctions/DualNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vectorialFunctions/DualNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vectorialFunctions/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vectorialFunctions/Function.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vectorialFunctions/MultV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vectorialFunctions/MultV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vectorialFunctions/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vectorialFunctions/Power.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vectorialFunctions/RestaV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vectorialFunctions/RestaV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vectorialFunctions/SinV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vectorialFunctions/SinV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vectorialFunctions/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vectorialFunctions/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vectorialFunctions/SumaV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vectorialFunctions/SumaV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vectorialFunctions/XV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vectorialFunctions/XV.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,13 +35,16 @@
       <list>
         <option value="UML Sequence" />
         <option value="UML Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -47,18 +55,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Class&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultPlantUmlFileTemplate": "UML Class",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/clara/Documentos/DS/PROB/Automatic_differentitation"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="vectorialFunctions.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="vectorialFunctions.Main" />
       <module name="Automatic_differentitation" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -66,7 +75,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.vectorialFunctions.Main" />
       </list>
     </recent_temporary>
   </component>
