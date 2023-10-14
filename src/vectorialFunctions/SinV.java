@@ -13,13 +13,22 @@ public class SinV implements Function{
     DualNumber value = expression.calculate(dn);
     //f(x)
     double sin = Math.sin(value.u);
-    System.out.println("sin(" + value + ") is " + sin);
+    //System.out.println("sin(" + value + ") is " + sin);
     //f'(x)
-    double derivativeSin = Math.cos(value.u) * (value.uprime);
+    double derivativeSin = Math.cos(value.u) * value.uprime;
     return new DualNumber(sin, derivativeSin);
   }
 
-  public String toString() {
-    return "sin(" + expression + ")";
+  @Override
+  public String getOperation() {
+    return "sin(" + expression.getOperation() + ")";
   }
+
+  @Override
+  public void print() {
+    System.out.print(getOperation());
+  }
+  /*public String toString() {
+    return "sin(" + expression + ")";
+  }*/
 }

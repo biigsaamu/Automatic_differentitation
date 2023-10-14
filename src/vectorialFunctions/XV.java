@@ -2,8 +2,8 @@ package vectorialFunctions;
 
 public class XV implements Function{
   private Function expression;
-  public XV(Function expression) { // i think this should be empty - slide 17
-    this.expression = expression;
+  public XV() { // i think this should be empty - slide 17
+    //this.expression = expression;
   }
 
   @Override
@@ -12,8 +12,16 @@ public class XV implements Function{
     return new DualNumber(dn.u, 1.0);
   }
 
-  public String toString() {
+  public String getOperation() {
+    return "x";
+  }
+
+  @Override
+  public void print() {
+    System.out.print(getOperation());
+  }
+  /*public String toString() {
     return "X(" + expression
         + ")";
-  }
+  }*/
 }

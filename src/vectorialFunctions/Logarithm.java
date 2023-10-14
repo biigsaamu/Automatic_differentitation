@@ -18,7 +18,16 @@ public class Logarithm implements Function{
     return new DualNumber(log, derivativeLog);
   }
 
-  public String toString() {
-    return "log(" + expression + ")";
+  @Override
+  public String getOperation() {
+    return "log(" + expression.getOperation() + ")";
   }
+
+  @Override
+  public void print() {
+    System.out.print(getOperation());
+  }
+  /*public String toString() {
+    return "log(" + expression + ")";
+  }*/
 }

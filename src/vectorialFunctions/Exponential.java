@@ -18,7 +18,17 @@ public class Exponential implements Function{
     return new DualNumber(exp, derivativeExp);
   }
 
-  public String toString() {
-    return "exp(" + expression + ")";
+  @Override
+  public String getOperation() {
+    return "exp(" + expression.getOperation() + ")";
   }
+
+  @Override
+  public void print() {
+    System.out.print(getOperation());
+  }
+
+  /*public String toString() {
+    return "exp(" + expression + ")";
+  }*/
 }

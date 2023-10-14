@@ -17,7 +17,17 @@ public class DivV extends BinaryOperatorV{
     return new DualNumber(division, derivativeDivision);
   }
 
-  public String toString() {
-    return "(" + op1 + " / " + op2 + ")";
+  @Override
+  public String getOperation() {
+    return op1.getOperation() + " / " + op2.getOperation();
   }
+
+  @Override
+  public void print() {
+    System.out.print(getOperation());
+  }
+
+  /*public String toString() {
+    return "(" + op1 + " / " + op2 + ")";
+  }*/
 }

@@ -14,8 +14,18 @@ public class Square extends BinaryOperatorV{
     double derivativePow = dn2.u * Math.pow(dn1.u, (dn2.u-1)) * dn1.uprime;
     return new DualNumber(pow, derivativePow);
   }
-  public String toString() {
-    return "Pow " + op1 + "^" + op2;
+
+  @Override
+  public String getOperation() {
+    return "Square " + op1.getOperation() + "^" + op2.getOperation();
   }
+
+  @Override
+  public void print() {
+    System.out.print(getOperation());
+  }
+  /*public String toString() {
+    return "Pow " + op1 + "^" + op2;
+  }*/
 
 }

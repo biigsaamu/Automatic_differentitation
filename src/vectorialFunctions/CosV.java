@@ -19,7 +19,17 @@ public class CosV implements Function{
     return new DualNumber(cos, derivativeCos);
   }
 
-  public String toString() {
-    return "cos(" + expression + ")";
+  @Override
+  public String getOperation() {
+    return "sin(" + expression.getOperation() + ")";
   }
+
+  @Override
+  public void print() {
+    System.out.print(getOperation());
+  }
+
+  /*public String toString() {
+    return "cos(" + expression + ")";
+  }*/
 }

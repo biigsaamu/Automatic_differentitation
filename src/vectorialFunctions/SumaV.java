@@ -16,7 +16,19 @@ public class SumaV extends BinaryOperatorV{
     //System.out.println("Suma: " + op1 + " + " + op2 + " = " + result);
     return new DualNumber(add, derivativeAdd);
   }
-  public String toString() {
-    return "(" + op1 + " + " + op2 + ")";
+
+
+  @Override
+  public String getOperation() {
+    return op1.getOperation() + " + " + op2.getOperation();
   }
+
+  @Override
+  public void print() {
+    System.out.print(getOperation());
+  }
+
+  /*public String toString() {
+    return "(" + op1 + " + " + op2 + ")";
+  }*/
 }
